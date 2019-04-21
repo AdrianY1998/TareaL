@@ -1,10 +1,14 @@
 package com.wor.tarealistas;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.google.gson.Gson;
 import com.wor.tarealistas.Adapter.ProductAdapter;
 import com.wor.tarealistas.model.Produ;
 
@@ -42,6 +46,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addEvents(){
-
+        productos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Produ produ = productosArray.get(position);
+                Intent intent = new Intent(mContext, ProductActivity.class);
+                intent.putExtra(Constants.KEY_PRODUCT, new Gson().toJson(produ));
+                startActivity(intent);
+            }
+        });
     }
 }
