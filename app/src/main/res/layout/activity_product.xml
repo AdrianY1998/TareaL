@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/image"
-        android:layout_width="350dp"
-        android:layout_height="450dp"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
         app:srcCompat="@drawable/apple"/>
@@ -30,7 +30,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="Id: "
-            android:textSize="36sp" />
+            android:textSize="22sp" />
 
         <TextView
             android:id="@+id/productId"
@@ -39,7 +39,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="1"
-            android:textSize="36sp" />
+            android:textSize="22sp" />
 
     </LinearLayout>
 
@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/layoutId"
         android:layout_centerInParent="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="2dp"
         android:orientation="horizontal">
 
         <TextView
@@ -60,7 +60,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="Producto: "
-            android:textSize="36sp" />
+            android:textSize="22sp" />
 
         <TextView
             android:id="@+id/productName"
@@ -69,7 +69,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="Manzana"
-            android:textSize="36sp" />
+            android:textSize="22sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -78,7 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/layoutName"
         android:layout_centerInParent="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="2dp"
         android:orientation="horizontal">
 
         <TextView
@@ -87,7 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Precio: "
-            android:textSize="36sp" />
+            android:textSize="22sp" />
 
         <TextView
             android:id="@+id/productPrice"
@@ -95,7 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="5"
-            android:textSize="36sp" />
+            android:textSize="22sp" />
 
         <TextView
             android:id="@+id/coin"
@@ -103,7 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text=" Bs."
-            android:textSize="36sp" />
+            android:textSize="22sp" />
     </LinearLayout>
 
 </RelativeLayout>
